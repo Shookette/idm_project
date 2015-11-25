@@ -1,0 +1,28 @@
+grammar istic.m2miage.idm.VideoGen with org.eclipse.xtext.common.Terminals
+
+generate videoGen "http://www.m2miage.istic/idm/VideoGen"
+
+VideoGen:
+	'VideoGen' '{' videotypes += VideoType* '}';
+
+VideoType:
+	Mandatory | Optional | Alternatives
+;
+
+Mandatory:
+	'mandatory' video+=VideoSeq
+;
+
+Optional:
+	'optional' video+=VideoSeq
+;
+
+Alternatives:
+	'alternatives' name=ID '{' videos+=VideoSeq+ '}'
+;
+VideoSeq:
+	'videoseq' name=ID path=STRING probabilite=PROBABILITY? description=STRING? duree=DURATION?
+;
+
+terminal DURATION: INT '"';
+terminal PROBABILITY: INT '%';
