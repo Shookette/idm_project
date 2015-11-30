@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<videoGen:VideoGen xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:videoGen="http://www.m2miage.istic/idm/VideoGen">
+  <videotypes xsi:type="videoGen:Mandatory">
+    <video name="v1" path="v1/v1.mp4"/>
+  </videotypes>
+  <videotypes xsi:type="videoGen:Optional">
+    <video name="v2" path="v2folder/v2.mp4"/>
+  </videotypes>
+  <videotypes xsi:type="videoGen:Alternatives" name="v3">
+    <videos name="v31" path="v3/seq1.mp4"/>
+    <videos name="v32" path="v3/seq2.mp4"/>
+    <videos name="v33" path="v3/seq3.mp4"/>
+  </videotypes>
+  <videotypes xsi:type="videoGen:Alternatives" name="v4">
+    <videos name="v41" path="v4/seq1.mp4"/>
+    <videos name="v42" path="v4/seq2.mp4"/>
+  </videotypes>
+  <videotypes xsi:type="videoGen:Mandatory">
+    <video name="v5" path="v5.mp4"/>
+  </videotypes>
+</videoGen:VideoGen>
