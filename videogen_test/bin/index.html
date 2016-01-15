@@ -1,0 +1,31 @@
+<html>
+			<head>
+			    <!-- The "functional" skin, "functional.css", "minimalist.css" and "playful.css" are available -->
+			    <link rel="stylesheet" href="//releases.flowplayer.org/6.0.4/skin/functional.css">
+			    <!-- Flowplayer depends on jquery for video tag based setups -->
+			    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	   		    <!-- Flowplayer-->
+	 			<script src="//releases.flowplayer.org/6.0.4/flowplayer.min.js"></script>
+				<script>
+					// install player manually after DOM is ready
+					$(function() {
+					    // install into all elements with class="player"
+					    $(".player").flowplayer({
+					        // reverse fraction of video aspect ratio
+					        // video dimensions: 470px / 250px
+					        ratio: 25/47,
+					        rtmp: "rtmp://s3b78u0kbtx79q.cloudfront.net/cfx/st",
+					        embed: {
+					            // embed with minimalist skin
+					            skin: "//releases.flowplayer.org/6.0.4/skin/minimalist.css"
+					        }
+					    });
+					});
+				</script>
+			</head>
+			<body>
+				<div class="player">		
+				</div>
+				<!--/end content -->
+			</body>
+		</html>

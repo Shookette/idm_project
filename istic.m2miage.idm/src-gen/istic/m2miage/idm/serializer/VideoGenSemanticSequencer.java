@@ -87,7 +87,7 @@ public class VideoGenSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	
 	/**
 	 * Constraint:
-	 *     (name=ID path=STRING probabilite=Probability? description=STRING? duree=Duration?)
+	 *     (name=ID path=STRING duree=STRING? description=STRING?)
 	 */
 	protected void sequence_VideoSeq(EObject context, VideoSeq semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

@@ -266,7 +266,7 @@ public class VideoGenPackageImpl extends EPackageImpl implements VideoGenPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getVideoSeq_Probabilite()
+  public EAttribute getVideoSeq_Duree()
   {
     return (EAttribute)videoSeqEClass.getEStructuralFeatures().get(2);
   }
@@ -279,16 +279,6 @@ public class VideoGenPackageImpl extends EPackageImpl implements VideoGenPackage
   public EAttribute getVideoSeq_Description()
   {
     return (EAttribute)videoSeqEClass.getEStructuralFeatures().get(3);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getVideoSeq_Duree()
-  {
-    return (EAttribute)videoSeqEClass.getEStructuralFeatures().get(4);
   }
 
   /**
@@ -339,9 +329,8 @@ public class VideoGenPackageImpl extends EPackageImpl implements VideoGenPackage
     videoSeqEClass = createEClass(VIDEO_SEQ);
     createEAttribute(videoSeqEClass, VIDEO_SEQ__NAME);
     createEAttribute(videoSeqEClass, VIDEO_SEQ__PATH);
-    createEAttribute(videoSeqEClass, VIDEO_SEQ__PROBABILITE);
-    createEAttribute(videoSeqEClass, VIDEO_SEQ__DESCRIPTION);
     createEAttribute(videoSeqEClass, VIDEO_SEQ__DUREE);
+    createEAttribute(videoSeqEClass, VIDEO_SEQ__DESCRIPTION);
   }
 
   /**
@@ -396,9 +385,8 @@ public class VideoGenPackageImpl extends EPackageImpl implements VideoGenPackage
     initEClass(videoSeqEClass, VideoSeq.class, "VideoSeq", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getVideoSeq_Name(), ecorePackage.getEString(), "name", null, 0, 1, VideoSeq.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getVideoSeq_Path(), ecorePackage.getEString(), "path", null, 0, 1, VideoSeq.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getVideoSeq_Probabilite(), ecorePackage.getEString(), "probabilite", null, 0, 1, VideoSeq.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getVideoSeq_Description(), ecorePackage.getEString(), "description", null, 0, 1, VideoSeq.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getVideoSeq_Duree(), ecorePackage.getEString(), "duree", null, 0, 1, VideoSeq.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getVideoSeq_Description(), ecorePackage.getEString(), "description", null, 0, 1, VideoSeq.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

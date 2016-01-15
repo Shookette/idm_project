@@ -1,0 +1,3 @@
+file '/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Ribs.mp4'
+file '/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Tooth_Fairy.mp4'
+file '/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Worms.mp4'

@@ -1,0 +1,12 @@
+VideoGen {
+	mandatory videoseq Ribs "/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Ribs.mp4"
+"4077.0" ""
+	optional videoseq Alien "/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Alien.mp4"
+"1965.0" ""
+	alternatives v3 {
+		videoseq Final_Test "/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Final_Test.mp4"
+"2318.0" ""
+		videoseq Tooth_Fairy "/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Tooth_Fairy.mp4"
+	"678.0" "" }
+	mandatory videoseq Worms "/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Worms.mp4"
+"503.0" "" }

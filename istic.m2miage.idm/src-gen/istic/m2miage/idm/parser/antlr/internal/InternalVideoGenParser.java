@@ -21,25 +21,23 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalVideoGenParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_STRING", "RULE_PROBABILITY", "RULE_DURATION", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'VideoGen'", "'{'", "'}'", "'mandatory'", "'optional'", "'alternatives'", "'videoseq'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_STRING", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'VideoGen'", "'{'", "'}'", "'mandatory'", "'optional'", "'alternatives'", "'videoseq'"
     };
-    public static final int RULE_DURATION=7;
+    public static final int RULE_ID=4;
+    public static final int RULE_WS=9;
     public static final int RULE_STRING=5;
-    public static final int RULE_SL_COMMENT=10;
-    public static final int T__19=19;
+    public static final int RULE_ANY_OTHER=10;
+    public static final int RULE_SL_COMMENT=8;
     public static final int T__15=15;
     public static final int T__16=16;
     public static final int T__17=17;
-    public static final int T__18=18;
+    public static final int RULE_INT=6;
+    public static final int T__11=11;
+    public static final int RULE_ML_COMMENT=7;
+    public static final int T__12=12;
     public static final int T__13=13;
     public static final int T__14=14;
     public static final int EOF=-1;
-    public static final int RULE_PROBABILITY=6;
-    public static final int RULE_ID=4;
-    public static final int RULE_WS=11;
-    public static final int RULE_ANY_OTHER=12;
-    public static final int RULE_INT=8;
-    public static final int RULE_ML_COMMENT=9;
 
     // delegates
     // delegators
@@ -135,11 +133,11 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
             // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:80:1: (otherlv_0= 'VideoGen' otherlv_1= '{' ( (lv_videotypes_2_0= ruleVideoType ) )* otherlv_3= '}' )
             // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:80:3: otherlv_0= 'VideoGen' otherlv_1= '{' ( (lv_videotypes_2_0= ruleVideoType ) )* otherlv_3= '}'
             {
-            otherlv_0=(Token)match(input,13,FOLLOW_13_in_ruleVideoGen122); 
+            otherlv_0=(Token)match(input,11,FOLLOW_11_in_ruleVideoGen122); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getVideoGenAccess().getVideoGenKeyword_0());
                 
-            otherlv_1=(Token)match(input,14,FOLLOW_14_in_ruleVideoGen134); 
+            otherlv_1=(Token)match(input,12,FOLLOW_12_in_ruleVideoGen134); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getVideoGenAccess().getLeftCurlyBracketKeyword_1());
                 
@@ -149,7 +147,7 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
                 int alt1=2;
                 int LA1_0 = input.LA(1);
 
-                if ( ((LA1_0>=16 && LA1_0<=18)) ) {
+                if ( ((LA1_0>=14 && LA1_0<=16)) ) {
                     alt1=1;
                 }
 
@@ -192,7 +190,7 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_3=(Token)match(input,15,FOLLOW_15_in_ruleVideoGen168); 
+            otherlv_3=(Token)match(input,13,FOLLOW_13_in_ruleVideoGen168); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getVideoGenAccess().getRightCurlyBracketKeyword_3());
                 
@@ -273,17 +271,17 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
             // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:131:1: (this_Mandatory_0= ruleMandatory | this_Optional_1= ruleOptional | this_Alternatives_2= ruleAlternatives )
             int alt2=3;
             switch ( input.LA(1) ) {
-            case 16:
+            case 14:
                 {
                 alt2=1;
                 }
                 break;
-            case 17:
+            case 15:
                 {
                 alt2=2;
                 }
                 break;
-            case 18:
+            case 16:
                 {
                 alt2=3;
                 }
@@ -424,7 +422,7 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
             // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:181:1: (otherlv_0= 'mandatory' ( (lv_video_1_0= ruleVideoSeq ) ) )
             // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:181:3: otherlv_0= 'mandatory' ( (lv_video_1_0= ruleVideoSeq ) )
             {
-            otherlv_0=(Token)match(input,16,FOLLOW_16_in_ruleMandatory397); 
+            otherlv_0=(Token)match(input,14,FOLLOW_14_in_ruleMandatory397); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getMandatoryAccess().getMandatoryKeyword_0());
                 
@@ -533,7 +531,7 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
             // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:224:1: (otherlv_0= 'optional' ( (lv_video_1_0= ruleVideoSeq ) ) )
             // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:224:3: otherlv_0= 'optional' ( (lv_video_1_0= ruleVideoSeq ) )
             {
-            otherlv_0=(Token)match(input,17,FOLLOW_17_in_ruleOptional501); 
+            otherlv_0=(Token)match(input,15,FOLLOW_15_in_ruleOptional501); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getOptionalAccess().getOptionalKeyword_0());
                 
@@ -645,7 +643,7 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
             // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:267:1: (otherlv_0= 'alternatives' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_videos_3_0= ruleVideoSeq ) )+ otherlv_4= '}' )
             // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:267:3: otherlv_0= 'alternatives' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_videos_3_0= ruleVideoSeq ) )+ otherlv_4= '}'
             {
-            otherlv_0=(Token)match(input,18,FOLLOW_18_in_ruleAlternatives605); 
+            otherlv_0=(Token)match(input,16,FOLLOW_16_in_ruleAlternatives605); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getAlternativesAccess().getAlternativesKeyword_0());
                 
@@ -675,7 +673,7 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,14,FOLLOW_14_in_ruleAlternatives639); 
+            otherlv_2=(Token)match(input,12,FOLLOW_12_in_ruleAlternatives639); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getAlternativesAccess().getLeftCurlyBracketKeyword_2());
                 
@@ -686,7 +684,7 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
                 int alt3=2;
                 int LA3_0 = input.LA(1);
 
-                if ( (LA3_0==19) ) {
+                if ( (LA3_0==17) ) {
                     alt3=1;
                 }
 
@@ -733,7 +731,7 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
                 cnt3++;
             } while (true);
 
-            otherlv_4=(Token)match(input,15,FOLLOW_15_in_ruleAlternatives673); 
+            otherlv_4=(Token)match(input,13,FOLLOW_13_in_ruleAlternatives673); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getAlternativesAccess().getRightCurlyBracketKeyword_4());
                 
@@ -794,27 +792,26 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleVideoSeq"
-    // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:332:1: ruleVideoSeq returns [EObject current=null] : (otherlv_0= 'videoseq' ( (lv_name_1_0= RULE_ID ) ) ( (lv_path_2_0= RULE_STRING ) ) ( (lv_probabilite_3_0= RULE_PROBABILITY ) )? ( (lv_description_4_0= RULE_STRING ) )? ( (lv_duree_5_0= RULE_DURATION ) )? ) ;
+    // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:332:1: ruleVideoSeq returns [EObject current=null] : (otherlv_0= 'videoseq' ( (lv_name_1_0= RULE_ID ) ) ( (lv_path_2_0= RULE_STRING ) ) ( (lv_duree_3_0= RULE_STRING ) )? ( (lv_description_4_0= RULE_STRING ) )? ) ;
     public final EObject ruleVideoSeq() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
         Token lv_name_1_0=null;
         Token lv_path_2_0=null;
-        Token lv_probabilite_3_0=null;
+        Token lv_duree_3_0=null;
         Token lv_description_4_0=null;
-        Token lv_duree_5_0=null;
 
          enterRule(); 
             
         try {
-            // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:335:28: ( (otherlv_0= 'videoseq' ( (lv_name_1_0= RULE_ID ) ) ( (lv_path_2_0= RULE_STRING ) ) ( (lv_probabilite_3_0= RULE_PROBABILITY ) )? ( (lv_description_4_0= RULE_STRING ) )? ( (lv_duree_5_0= RULE_DURATION ) )? ) )
-            // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:336:1: (otherlv_0= 'videoseq' ( (lv_name_1_0= RULE_ID ) ) ( (lv_path_2_0= RULE_STRING ) ) ( (lv_probabilite_3_0= RULE_PROBABILITY ) )? ( (lv_description_4_0= RULE_STRING ) )? ( (lv_duree_5_0= RULE_DURATION ) )? )
+            // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:335:28: ( (otherlv_0= 'videoseq' ( (lv_name_1_0= RULE_ID ) ) ( (lv_path_2_0= RULE_STRING ) ) ( (lv_duree_3_0= RULE_STRING ) )? ( (lv_description_4_0= RULE_STRING ) )? ) )
+            // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:336:1: (otherlv_0= 'videoseq' ( (lv_name_1_0= RULE_ID ) ) ( (lv_path_2_0= RULE_STRING ) ) ( (lv_duree_3_0= RULE_STRING ) )? ( (lv_description_4_0= RULE_STRING ) )? )
             {
-            // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:336:1: (otherlv_0= 'videoseq' ( (lv_name_1_0= RULE_ID ) ) ( (lv_path_2_0= RULE_STRING ) ) ( (lv_probabilite_3_0= RULE_PROBABILITY ) )? ( (lv_description_4_0= RULE_STRING ) )? ( (lv_duree_5_0= RULE_DURATION ) )? )
-            // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:336:3: otherlv_0= 'videoseq' ( (lv_name_1_0= RULE_ID ) ) ( (lv_path_2_0= RULE_STRING ) ) ( (lv_probabilite_3_0= RULE_PROBABILITY ) )? ( (lv_description_4_0= RULE_STRING ) )? ( (lv_duree_5_0= RULE_DURATION ) )?
+            // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:336:1: (otherlv_0= 'videoseq' ( (lv_name_1_0= RULE_ID ) ) ( (lv_path_2_0= RULE_STRING ) ) ( (lv_duree_3_0= RULE_STRING ) )? ( (lv_description_4_0= RULE_STRING ) )? )
+            // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:336:3: otherlv_0= 'videoseq' ( (lv_name_1_0= RULE_ID ) ) ( (lv_path_2_0= RULE_STRING ) ) ( (lv_duree_3_0= RULE_STRING ) )? ( (lv_description_4_0= RULE_STRING ) )?
             {
-            otherlv_0=(Token)match(input,19,FOLLOW_19_in_ruleVideoSeq756); 
+            otherlv_0=(Token)match(input,17,FOLLOW_17_in_ruleVideoSeq756); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getVideoSeqAccess().getVideoseqKeyword_0());
                 
@@ -870,23 +867,23 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:376:2: ( (lv_probabilite_3_0= RULE_PROBABILITY ) )?
+            // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:376:2: ( (lv_duree_3_0= RULE_STRING ) )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
-            if ( (LA4_0==RULE_PROBABILITY) ) {
+            if ( (LA4_0==RULE_STRING) ) {
                 alt4=1;
             }
             switch (alt4) {
                 case 1 :
-                    // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:377:1: (lv_probabilite_3_0= RULE_PROBABILITY )
+                    // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:377:1: (lv_duree_3_0= RULE_STRING )
                     {
-                    // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:377:1: (lv_probabilite_3_0= RULE_PROBABILITY )
-                    // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:378:3: lv_probabilite_3_0= RULE_PROBABILITY
+                    // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:377:1: (lv_duree_3_0= RULE_STRING )
+                    // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:378:3: lv_duree_3_0= RULE_STRING
                     {
-                    lv_probabilite_3_0=(Token)match(input,RULE_PROBABILITY,FOLLOW_RULE_PROBABILITY_in_ruleVideoSeq817); 
+                    lv_duree_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleVideoSeq817); 
 
-                    			newLeafNode(lv_probabilite_3_0, grammarAccess.getVideoSeqAccess().getProbabiliteProbabilityTerminalRuleCall_3_0()); 
+                    			newLeafNode(lv_duree_3_0, grammarAccess.getVideoSeqAccess().getDureeSTRINGTerminalRuleCall_3_0()); 
                     		
 
                     	        if (current==null) {
@@ -894,9 +891,9 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
                     	        }
                            		setWithLastConsumed(
                            			current, 
-                           			"probabilite",
-                            		lv_probabilite_3_0, 
-                            		"Probability");
+                           			"duree",
+                            		lv_duree_3_0, 
+                            		"STRING");
                     	    
 
                     }
@@ -944,43 +941,6 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:412:3: ( (lv_duree_5_0= RULE_DURATION ) )?
-            int alt6=2;
-            int LA6_0 = input.LA(1);
-
-            if ( (LA6_0==RULE_DURATION) ) {
-                alt6=1;
-            }
-            switch (alt6) {
-                case 1 :
-                    // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:413:1: (lv_duree_5_0= RULE_DURATION )
-                    {
-                    // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:413:1: (lv_duree_5_0= RULE_DURATION )
-                    // ../istic.m2miage.idm/src-gen/istic/m2miage/idm/parser/antlr/internal/InternalVideoGen.g:414:3: lv_duree_5_0= RULE_DURATION
-                    {
-                    lv_duree_5_0=(Token)match(input,RULE_DURATION,FOLLOW_RULE_DURATION_in_ruleVideoSeq863); 
-
-                    			newLeafNode(lv_duree_5_0, grammarAccess.getVideoSeqAccess().getDureeDurationTerminalRuleCall_5_0()); 
-                    		
-
-                    	        if (current==null) {
-                    	            current = createModelElement(grammarAccess.getVideoSeqRule());
-                    	        }
-                           		setWithLastConsumed(
-                           			current, 
-                           			"duree",
-                            		lv_duree_5_0, 
-                            		"Duration");
-                    	    
-
-                    }
-
-
-                    }
-                    break;
-
-            }
-
 
             }
 
@@ -1007,10 +967,10 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
 
     public static final BitSet FOLLOW_ruleVideoGen_in_entryRuleVideoGen75 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleVideoGen85 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_ruleVideoGen122 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleVideoGen134 = new BitSet(new long[]{0x0000000000078000L});
-    public static final BitSet FOLLOW_ruleVideoType_in_ruleVideoGen155 = new BitSet(new long[]{0x0000000000078000L});
-    public static final BitSet FOLLOW_15_in_ruleVideoGen168 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_11_in_ruleVideoGen122 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleVideoGen134 = new BitSet(new long[]{0x000000000001E000L});
+    public static final BitSet FOLLOW_ruleVideoType_in_ruleVideoGen155 = new BitSet(new long[]{0x000000000001E000L});
+    public static final BitSet FOLLOW_13_in_ruleVideoGen168 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleVideoType_in_entryRuleVideoType204 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleVideoType214 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleMandatory_in_ruleVideoType261 = new BitSet(new long[]{0x0000000000000002L});
@@ -1018,26 +978,25 @@ public class InternalVideoGenParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleAlternatives_in_ruleVideoType315 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleMandatory_in_entryRuleMandatory350 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleMandatory360 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_ruleMandatory397 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_14_in_ruleMandatory397 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_ruleVideoSeq_in_ruleMandatory418 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleOptional_in_entryRuleOptional454 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleOptional464 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_ruleOptional501 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_15_in_ruleOptional501 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_ruleVideoSeq_in_ruleOptional522 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleAlternatives_in_entryRuleAlternatives558 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleAlternatives568 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_ruleAlternatives605 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAlternatives622 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleAlternatives639 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_ruleVideoSeq_in_ruleAlternatives660 = new BitSet(new long[]{0x0000000000088000L});
-    public static final BitSet FOLLOW_15_in_ruleAlternatives673 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_ruleAlternatives605 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAlternatives622 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleAlternatives639 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_ruleVideoSeq_in_ruleAlternatives660 = new BitSet(new long[]{0x0000000000022000L});
+    public static final BitSet FOLLOW_13_in_ruleAlternatives673 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleVideoSeq_in_entryRuleVideoSeq709 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleVideoSeq719 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_ruleVideoSeq756 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_17_in_ruleVideoSeq756 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_ID_in_ruleVideoSeq773 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVideoSeq795 = new BitSet(new long[]{0x00000000000000E2L});
-    public static final BitSet FOLLOW_RULE_PROBABILITY_in_ruleVideoSeq817 = new BitSet(new long[]{0x00000000000000A2L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVideoSeq840 = new BitSet(new long[]{0x0000000000000082L});
-    public static final BitSet FOLLOW_RULE_DURATION_in_ruleVideoSeq863 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVideoSeq795 = new BitSet(new long[]{0x0000000000000022L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVideoSeq817 = new BitSet(new long[]{0x0000000000000022L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVideoSeq840 = new BitSet(new long[]{0x0000000000000002L});
 
 }

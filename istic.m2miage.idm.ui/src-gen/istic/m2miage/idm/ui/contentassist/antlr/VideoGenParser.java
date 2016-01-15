@@ -50,9 +50,8 @@ public class VideoGenParser extends AbstractContentAssistParser {
 					put(grammarAccess.getAlternativesAccess().getVideosAssignment_3(), "rule__Alternatives__VideosAssignment_3");
 					put(grammarAccess.getVideoSeqAccess().getNameAssignment_1(), "rule__VideoSeq__NameAssignment_1");
 					put(grammarAccess.getVideoSeqAccess().getPathAssignment_2(), "rule__VideoSeq__PathAssignment_2");
-					put(grammarAccess.getVideoSeqAccess().getProbabiliteAssignment_3(), "rule__VideoSeq__ProbabiliteAssignment_3");
+					put(grammarAccess.getVideoSeqAccess().getDureeAssignment_3(), "rule__VideoSeq__DureeAssignment_3");
 					put(grammarAccess.getVideoSeqAccess().getDescriptionAssignment_4(), "rule__VideoSeq__DescriptionAssignment_4");
-					put(grammarAccess.getVideoSeqAccess().getDureeAssignment_5(), "rule__VideoSeq__DureeAssignment_5");
 				}
 			};
 		}

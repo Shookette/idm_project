@@ -784,9 +784,9 @@ rule__VideoSeq__Group__3__Impl
     }
 :
 (
-{ before(grammarAccess.getVideoSeqAccess().getProbabiliteAssignment_3()); }
-(rule__VideoSeq__ProbabiliteAssignment_3)?
-{ after(grammarAccess.getVideoSeqAccess().getProbabiliteAssignment_3()); }
+{ before(grammarAccess.getVideoSeqAccess().getDureeAssignment_3()); }
+(rule__VideoSeq__DureeAssignment_3)?
+{ after(grammarAccess.getVideoSeqAccess().getDureeAssignment_3()); }
 )
 
 ;
@@ -801,7 +801,6 @@ rule__VideoSeq__Group__4
     }
 :
 	rule__VideoSeq__Group__4__Impl
-	rule__VideoSeq__Group__5
 ;
 finally {
 	restoreStackSize(stackSize);
@@ -822,36 +821,6 @@ rule__VideoSeq__Group__4__Impl
 finally {
 	restoreStackSize(stackSize);
 }
-
-
-rule__VideoSeq__Group__5
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-	rule__VideoSeq__Group__5__Impl
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__VideoSeq__Group__5__Impl
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-(
-{ before(grammarAccess.getVideoSeqAccess().getDureeAssignment_5()); }
-(rule__VideoSeq__DureeAssignment_5)?
-{ after(grammarAccess.getVideoSeqAccess().getDureeAssignment_5()); }
-)
-
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-
 
 
 
@@ -970,14 +939,14 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__VideoSeq__ProbabiliteAssignment_3
+rule__VideoSeq__DureeAssignment_3
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getVideoSeqAccess().getProbabiliteProbabilityTerminalRuleCall_3_0()); }
-	RULE_PROBABILITY{ after(grammarAccess.getVideoSeqAccess().getProbabiliteProbabilityTerminalRuleCall_3_0()); }
+{ before(grammarAccess.getVideoSeqAccess().getDureeSTRINGTerminalRuleCall_3_0()); }
+	RULE_STRING{ after(grammarAccess.getVideoSeqAccess().getDureeSTRINGTerminalRuleCall_3_0()); }
 )
 
 ;
@@ -1000,25 +969,6 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__VideoSeq__DureeAssignment_5
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-(
-{ before(grammarAccess.getVideoSeqAccess().getDureeDurationTerminalRuleCall_5_0()); }
-	RULE_DURATION{ after(grammarAccess.getVideoSeqAccess().getDureeDurationTerminalRuleCall_5_0()); }
-)
-
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-
-RULE_DURATION : RULE_INT '"';
-
-RULE_PROBABILITY : RULE_INT '%';
 
 RULE_ID : '^'? ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
 

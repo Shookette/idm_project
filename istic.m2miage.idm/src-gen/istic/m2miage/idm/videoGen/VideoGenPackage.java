@@ -225,13 +225,13 @@ public interface VideoGenPackage extends EPackage
   int VIDEO_SEQ__PATH = 1;
 
   /**
-   * The feature id for the '<em><b>Probabilite</b></em>' attribute.
+   * The feature id for the '<em><b>Duree</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int VIDEO_SEQ__PROBABILITE = 2;
+  int VIDEO_SEQ__DUREE = 2;
 
   /**
    * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -243,22 +243,13 @@ public interface VideoGenPackage extends EPackage
   int VIDEO_SEQ__DESCRIPTION = 3;
 
   /**
-   * The feature id for the '<em><b>Duree</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int VIDEO_SEQ__DUREE = 4;
-
-  /**
    * The number of structural features of the '<em>Video Seq</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int VIDEO_SEQ_FEATURE_COUNT = 5;
+  int VIDEO_SEQ_FEATURE_COUNT = 4;
 
 
   /**
@@ -399,15 +390,15 @@ public interface VideoGenPackage extends EPackage
   EAttribute getVideoSeq_Path();
 
   /**
-   * Returns the meta object for the attribute '{@link istic.m2miage.idm.videoGen.VideoSeq#getProbabilite <em>Probabilite</em>}'.
+   * Returns the meta object for the attribute '{@link istic.m2miage.idm.videoGen.VideoSeq#getDuree <em>Duree</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Probabilite</em>'.
-   * @see istic.m2miage.idm.videoGen.VideoSeq#getProbabilite()
+   * @return the meta object for the attribute '<em>Duree</em>'.
+   * @see istic.m2miage.idm.videoGen.VideoSeq#getDuree()
    * @see #getVideoSeq()
    * @generated
    */
-  EAttribute getVideoSeq_Probabilite();
+  EAttribute getVideoSeq_Duree();
 
   /**
    * Returns the meta object for the attribute '{@link istic.m2miage.idm.videoGen.VideoSeq#getDescription <em>Description</em>}'.
@@ -419,17 +410,6 @@ public interface VideoGenPackage extends EPackage
    * @generated
    */
   EAttribute getVideoSeq_Description();
-
-  /**
-   * Returns the meta object for the attribute '{@link istic.m2miage.idm.videoGen.VideoSeq#getDuree <em>Duree</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Duree</em>'.
-   * @see istic.m2miage.idm.videoGen.VideoSeq#getDuree()
-   * @see #getVideoSeq()
-   * @generated
-   */
-  EAttribute getVideoSeq_Duree();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -571,12 +551,12 @@ public interface VideoGenPackage extends EPackage
     EAttribute VIDEO_SEQ__PATH = eINSTANCE.getVideoSeq_Path();
 
     /**
-     * The meta object literal for the '<em><b>Probabilite</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Duree</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute VIDEO_SEQ__PROBABILITE = eINSTANCE.getVideoSeq_Probabilite();
+    EAttribute VIDEO_SEQ__DUREE = eINSTANCE.getVideoSeq_Duree();
 
     /**
      * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -585,14 +565,6 @@ public interface VideoGenPackage extends EPackage
      * @generated
      */
     EAttribute VIDEO_SEQ__DESCRIPTION = eINSTANCE.getVideoSeq_Description();
-
-    /**
-     * The meta object literal for the '<em><b>Duree</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute VIDEO_SEQ__DUREE = eINSTANCE.getVideoSeq_Duree();
 
   }
 

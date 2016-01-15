@@ -12,23 +12,21 @@ import java.util.ArrayList;
 
 @SuppressWarnings("all")
 public class InternalVideoGenLexer extends Lexer {
-    public static final int RULE_DURATION=7;
+    public static final int RULE_ID=4;
+    public static final int RULE_WS=9;
     public static final int RULE_STRING=5;
-    public static final int RULE_SL_COMMENT=10;
-    public static final int T__19=19;
+    public static final int RULE_ANY_OTHER=10;
+    public static final int RULE_SL_COMMENT=8;
     public static final int T__15=15;
     public static final int T__16=16;
     public static final int T__17=17;
-    public static final int T__18=18;
+    public static final int RULE_INT=6;
+    public static final int T__11=11;
+    public static final int RULE_ML_COMMENT=7;
+    public static final int T__12=12;
     public static final int T__13=13;
     public static final int T__14=14;
     public static final int EOF=-1;
-    public static final int RULE_PROBABILITY=6;
-    public static final int RULE_ID=4;
-    public static final int RULE_WS=11;
-    public static final int RULE_ANY_OTHER=12;
-    public static final int RULE_INT=8;
-    public static final int RULE_ML_COMMENT=9;
 
     // delegates
     // delegators
@@ -43,16 +41,56 @@ public class InternalVideoGenLexer extends Lexer {
     }
     public String getGrammarFileName() { return "../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g"; }
 
-    // $ANTLR start "T__13"
-    public final void mT__13() throws RecognitionException {
+    // $ANTLR start "T__11"
+    public final void mT__11() throws RecognitionException {
         try {
-            int _type = T__13;
+            int _type = T__11;
             int _channel = DEFAULT_TOKEN_CHANNEL;
             // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:11:7: ( 'VideoGen' )
             // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:11:9: 'VideoGen'
             {
             match("VideoGen"); 
 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__11"
+
+    // $ANTLR start "T__12"
+    public final void mT__12() throws RecognitionException {
+        try {
+            int _type = T__12;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:12:7: ( '{' )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:12:9: '{'
+            {
+            match('{'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__12"
+
+    // $ANTLR start "T__13"
+    public final void mT__13() throws RecognitionException {
+        try {
+            int _type = T__13;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:13:7: ( '}' )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:13:9: '}'
+            {
+            match('}'); 
 
             }
 
@@ -69,10 +107,11 @@ public class InternalVideoGenLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:12:7: ( '{' )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:12:9: '{'
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:14:7: ( 'mandatory' )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:14:9: 'mandatory'
             {
-            match('{'); 
+            match("mandatory"); 
+
 
             }
 
@@ -89,10 +128,11 @@ public class InternalVideoGenLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:13:7: ( '}' )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:13:9: '}'
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:15:7: ( 'optional' )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:15:9: 'optional'
             {
-            match('}'); 
+            match("optional"); 
+
 
             }
 
@@ -109,10 +149,10 @@ public class InternalVideoGenLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:14:7: ( 'mandatory' )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:14:9: 'mandatory'
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:16:7: ( 'alternatives' )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:16:9: 'alternatives'
             {
-            match("mandatory"); 
+            match("alternatives"); 
 
 
             }
@@ -130,48 +170,6 @@ public class InternalVideoGenLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:15:7: ( 'optional' )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:15:9: 'optional'
-            {
-            match("optional"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__17"
-
-    // $ANTLR start "T__18"
-    public final void mT__18() throws RecognitionException {
-        try {
-            int _type = T__18;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:16:7: ( 'alternatives' )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:16:9: 'alternatives'
-            {
-            match("alternatives"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__18"
-
-    // $ANTLR start "T__19"
-    public final void mT__19() throws RecognitionException {
-        try {
-            int _type = T__19;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
             // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:17:7: ( 'videoseq' )
             // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:17:9: 'videoseq'
             {
@@ -186,59 +184,17 @@ public class InternalVideoGenLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end "T__19"
-
-    // $ANTLR start "RULE_DURATION"
-    public final void mRULE_DURATION() throws RecognitionException {
-        try {
-            int _type = RULE_DURATION;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1019:15: ( RULE_INT '\"' )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1019:17: RULE_INT '\"'
-            {
-            mRULE_INT(); 
-            match('\"'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "RULE_DURATION"
-
-    // $ANTLR start "RULE_PROBABILITY"
-    public final void mRULE_PROBABILITY() throws RecognitionException {
-        try {
-            int _type = RULE_PROBABILITY;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1021:18: ( RULE_INT '%' )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1021:20: RULE_INT '%'
-            {
-            mRULE_INT(); 
-            match('%'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "RULE_PROBABILITY"
+    // $ANTLR end "T__17"
 
     // $ANTLR start "RULE_ID"
     public final void mRULE_ID() throws RecognitionException {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1023:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1023:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:973:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:973:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1023:11: ( '^' )?
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:973:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -247,7 +203,7 @@ public class InternalVideoGenLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1023:11: '^'
+                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:973:11: '^'
                     {
                     match('^'); 
 
@@ -265,7 +221,7 @@ public class InternalVideoGenLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1023:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:973:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -314,10 +270,10 @@ public class InternalVideoGenLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1025:10: ( ( '0' .. '9' )+ )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1025:12: ( '0' .. '9' )+
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:975:10: ( ( '0' .. '9' )+ )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:975:12: ( '0' .. '9' )+
             {
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1025:12: ( '0' .. '9' )+
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:975:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -331,7 +287,7 @@ public class InternalVideoGenLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1025:13: '0' .. '9'
+            	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:975:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -363,10 +319,10 @@ public class InternalVideoGenLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1027:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1027:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:977:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:977:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1027:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:977:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -384,10 +340,10 @@ public class InternalVideoGenLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1027:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:977:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1027:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:977:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -403,7 +359,7 @@ public class InternalVideoGenLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1027:21: '\\\\' .
+                    	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:977:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -411,7 +367,7 @@ public class InternalVideoGenLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1027:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:977:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -436,10 +392,10 @@ public class InternalVideoGenLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1027:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:977:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1027:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:977:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -455,7 +411,7 @@ public class InternalVideoGenLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1027:54: '\\\\' .
+                    	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:977:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -463,7 +419,7 @@ public class InternalVideoGenLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1027:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:977:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -506,12 +462,12 @@ public class InternalVideoGenLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1029:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1029:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:979:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:979:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1029:24: ( options {greedy=false; } : . )*
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:979:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -536,7 +492,7 @@ public class InternalVideoGenLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1029:52: .
+            	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:979:52: .
             	    {
             	    matchAny(); 
 
@@ -566,12 +522,12 @@ public class InternalVideoGenLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1031:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1031:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:981:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:981:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1031:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:981:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -584,7 +540,7 @@ public class InternalVideoGenLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1031:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:981:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -604,7 +560,7 @@ public class InternalVideoGenLexer extends Lexer {
                 }
             } while (true);
 
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1031:40: ( ( '\\r' )? '\\n' )?
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:981:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -613,9 +569,9 @@ public class InternalVideoGenLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1031:41: ( '\\r' )? '\\n'
+                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:981:41: ( '\\r' )? '\\n'
                     {
-                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1031:41: ( '\\r' )?
+                    // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:981:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -624,7 +580,7 @@ public class InternalVideoGenLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1031:41: '\\r'
+                            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:981:41: '\\r'
                             {
                             match('\r'); 
 
@@ -656,10 +612,10 @@ public class InternalVideoGenLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1033:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1033:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:983:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:983:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1033:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:983:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -713,8 +669,8 @@ public class InternalVideoGenLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1035:16: ( . )
-            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1035:18: .
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:985:16: ( . )
+            // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:985:18: .
             {
             matchAny(); 
 
@@ -729,117 +685,103 @@ public class InternalVideoGenLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:8: ( T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | RULE_DURATION | RULE_PROBABILITY | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt12=16;
+        // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt12=14;
         alt12 = dfa12.predict(input);
         switch (alt12) {
             case 1 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:10: T__13
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:10: T__11
+                {
+                mT__11(); 
+
+                }
+                break;
+            case 2 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:16: T__12
+                {
+                mT__12(); 
+
+                }
+                break;
+            case 3 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:22: T__13
                 {
                 mT__13(); 
 
                 }
                 break;
-            case 2 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:16: T__14
+            case 4 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:28: T__14
                 {
                 mT__14(); 
 
                 }
                 break;
-            case 3 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:22: T__15
+            case 5 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:34: T__15
                 {
                 mT__15(); 
 
                 }
                 break;
-            case 4 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:28: T__16
+            case 6 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:40: T__16
                 {
                 mT__16(); 
 
                 }
                 break;
-            case 5 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:34: T__17
+            case 7 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:46: T__17
                 {
                 mT__17(); 
 
                 }
                 break;
-            case 6 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:40: T__18
-                {
-                mT__18(); 
-
-                }
-                break;
-            case 7 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:46: T__19
-                {
-                mT__19(); 
-
-                }
-                break;
             case 8 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:52: RULE_DURATION
-                {
-                mRULE_DURATION(); 
-
-                }
-                break;
-            case 9 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:66: RULE_PROBABILITY
-                {
-                mRULE_PROBABILITY(); 
-
-                }
-                break;
-            case 10 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:83: RULE_ID
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:52: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 11 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:91: RULE_INT
+            case 9 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:60: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 12 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:100: RULE_STRING
+            case 10 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:69: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 13 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:112: RULE_ML_COMMENT
+            case 11 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:81: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 14 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:128: RULE_SL_COMMENT
+            case 12 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:97: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 15 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:144: RULE_WS
+            case 13 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:113: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 16 :
-                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:152: RULE_ANY_OTHER
+            case 14 :
+                // ../istic.m2miage.idm.ui/src-gen/istic/m2miage/idm/ui/contentassist/antlr/internal/InternalVideoGen.g:1:121: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -853,19 +795,19 @@ public class InternalVideoGenLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\1\21\2\uffff\4\21\1\30\1\17\1\uffff\3\17\2\uffff\1\21\3\uffff\4\21\2\uffff\1\30\5\uffff\31\21\1\76\1\21\1\100\1\21\1\102\1\uffff\1\103\1\uffff\1\21\2\uffff\2\21\1\107\1\uffff";
+        "\1\uffff\1\21\2\uffff\4\21\1\17\2\uffff\3\17\2\uffff\1\21\3\uffff\4\21\5\uffff\31\21\1\73\1\21\1\75\1\21\1\77\1\uffff\1\100\1\uffff\1\21\2\uffff\2\21\1\104\1\uffff";
     static final String DFA12_eofS =
-        "\110\uffff";
+        "\105\uffff";
     static final String DFA12_minS =
-        "\1\0\1\151\2\uffff\1\141\1\160\1\154\1\151\1\42\1\101\1\uffff\2\0\1\52\2\uffff\1\144\3\uffff\1\156\2\164\1\144\2\uffff\1\42\5\uffff\1\145\1\144\1\151\2\145\1\157\1\141\1\157\1\162\1\157\1\107\1\164\2\156\1\163\1\145\1\157\2\141\1\145\1\156\1\162\1\154\1\164\1\161\1\60\1\171\1\60\1\151\1\60\1\uffff\1\60\1\uffff\1\166\2\uffff\1\145\1\163\1\60\1\uffff";
+        "\1\0\1\151\2\uffff\1\141\1\160\1\154\1\151\1\101\2\uffff\2\0\1\52\2\uffff\1\144\3\uffff\1\156\2\164\1\144\5\uffff\1\145\1\144\1\151\2\145\1\157\1\141\1\157\1\162\1\157\1\107\1\164\2\156\1\163\1\145\1\157\2\141\1\145\1\156\1\162\1\154\1\164\1\161\1\60\1\171\1\60\1\151\1\60\1\uffff\1\60\1\uffff\1\166\2\uffff\1\145\1\163\1\60\1\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\1\151\2\uffff\1\141\1\160\1\154\1\151\1\71\1\172\1\uffff\2\uffff\1\57\2\uffff\1\144\3\uffff\1\156\2\164\1\144\2\uffff\1\71\5\uffff\1\145\1\144\1\151\2\145\1\157\1\141\1\157\1\162\1\157\1\107\1\164\2\156\1\163\1\145\1\157\2\141\1\145\1\156\1\162\1\154\1\164\1\161\1\172\1\171\1\172\1\151\1\172\1\uffff\1\172\1\uffff\1\166\2\uffff\1\145\1\163\1\172\1\uffff";
+        "\1\uffff\1\151\2\uffff\1\141\1\160\1\154\1\151\1\172\2\uffff\2\uffff\1\57\2\uffff\1\144\3\uffff\1\156\2\164\1\144\5\uffff\1\145\1\144\1\151\2\145\1\157\1\141\1\157\1\162\1\157\1\107\1\164\2\156\1\163\1\145\1\157\2\141\1\145\1\156\1\162\1\154\1\164\1\161\1\172\1\171\1\172\1\151\1\172\1\uffff\1\172\1\uffff\1\166\2\uffff\1\145\1\163\1\172\1\uffff";
     static final String DFA12_acceptS =
-        "\2\uffff\1\2\1\3\6\uffff\1\12\3\uffff\1\17\1\20\1\uffff\1\12\1\2\1\3\4\uffff\1\13\1\10\1\uffff\1\11\1\14\1\15\1\16\1\17\36\uffff\1\1\1\uffff\1\5\1\uffff\1\7\1\4\3\uffff\1\6";
+        "\2\uffff\1\2\1\3\5\uffff\1\10\1\11\3\uffff\1\15\1\16\1\uffff\1\10\1\2\1\3\4\uffff\1\11\1\12\1\13\1\14\1\15\36\uffff\1\1\1\uffff\1\5\1\uffff\1\7\1\4\3\uffff\1\6";
     static final String DFA12_specialS =
-        "\1\1\12\uffff\1\2\1\0\73\uffff}>";
+        "\1\0\12\uffff\1\1\1\2\70\uffff}>";
     static final String[] DFA12_transitionS = {
-            "\11\17\2\16\2\17\1\16\22\17\1\16\1\17\1\13\4\17\1\14\7\17\1\15\12\10\7\17\25\12\1\1\4\12\3\17\1\11\1\12\1\17\1\6\13\12\1\4\1\12\1\5\6\12\1\7\4\12\1\2\1\17\1\3\uff82\17",
+            "\11\17\2\16\2\17\1\16\22\17\1\16\1\17\1\13\4\17\1\14\7\17\1\15\12\12\7\17\25\11\1\1\4\11\3\17\1\10\1\11\1\17\1\6\13\11\1\4\1\11\1\5\6\11\1\7\4\11\1\2\1\17\1\3\uff82\17",
             "\1\20",
             "",
             "",
@@ -873,30 +815,30 @@ public class InternalVideoGenLexer extends Lexer {
             "\1\25",
             "\1\26",
             "\1\27",
-            "\1\31\2\uffff\1\33\12\uffff\12\32",
             "\32\21\4\uffff\1\21\1\uffff\32\21",
             "",
-            "\0\34",
-            "\0\34",
-            "\1\35\4\uffff\1\36",
+            "",
+            "\0\31",
+            "\0\31",
+            "\1\32\4\uffff\1\33",
             "",
             "",
+            "\1\35",
+            "",
+            "",
+            "",
+            "\1\36",
+            "\1\37",
             "\1\40",
-            "",
-            "",
-            "",
             "\1\41",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\42",
             "\1\43",
             "\1\44",
-            "",
-            "",
-            "\1\31\2\uffff\1\33\12\uffff\12\32",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\45",
             "\1\46",
             "\1\47",
@@ -919,22 +861,19 @@ public class InternalVideoGenLexer extends Lexer {
             "\1\70",
             "\1\71",
             "\1\72",
-            "\1\73",
+            "\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
             "\1\74",
-            "\1\75",
             "\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
-            "\1\77",
+            "\1\76",
             "\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
+            "",
+            "\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
+            "",
             "\1\101",
-            "\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
-            "",
-            "\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
-            "",
-            "\1\104",
             "",
             "",
-            "\1\105",
-            "\1\106",
+            "\1\102",
+            "\1\103",
             "\12\21\7\uffff\32\21\4\uffff\1\21\1\uffff\32\21",
             ""
     };
@@ -969,23 +908,13 @@ public class InternalVideoGenLexer extends Lexer {
             this.transition = DFA12_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | RULE_DURATION | RULE_PROBABILITY | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA12_12 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA12_12>='\u0000' && LA12_12<='\uFFFF')) ) {s = 28;}
-
-                        else s = 15;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
                         int LA12_0 = input.LA(1);
 
                         s = -1;
@@ -1003,11 +932,11 @@ public class InternalVideoGenLexer extends Lexer {
 
                         else if ( (LA12_0=='v') ) {s = 7;}
 
-                        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 8;}
+                        else if ( (LA12_0=='^') ) {s = 8;}
 
-                        else if ( (LA12_0=='^') ) {s = 9;}
+                        else if ( ((LA12_0>='A' && LA12_0<='U')||(LA12_0>='W' && LA12_0<='Z')||LA12_0=='_'||(LA12_0>='b' && LA12_0<='l')||LA12_0=='n'||(LA12_0>='p' && LA12_0<='u')||(LA12_0>='w' && LA12_0<='z')) ) {s = 9;}
 
-                        else if ( ((LA12_0>='A' && LA12_0<='U')||(LA12_0>='W' && LA12_0<='Z')||LA12_0=='_'||(LA12_0>='b' && LA12_0<='l')||LA12_0=='n'||(LA12_0>='p' && LA12_0<='u')||(LA12_0>='w' && LA12_0<='z')) ) {s = 10;}
+                        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 10;}
 
                         else if ( (LA12_0=='\"') ) {s = 11;}
 
@@ -1021,11 +950,21 @@ public class InternalVideoGenLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 2 : 
+                    case 1 : 
                         int LA12_11 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA12_11>='\u0000' && LA12_11<='\uFFFF')) ) {s = 28;}
+                        if ( ((LA12_11>='\u0000' && LA12_11<='\uFFFF')) ) {s = 25;}
+
+                        else s = 15;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA12_12 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA12_12>='\u0000' && LA12_12<='\uFFFF')) ) {s = 25;}
 
                         else s = 15;
 

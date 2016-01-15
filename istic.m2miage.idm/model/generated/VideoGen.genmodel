@@ -24,9 +24,8 @@
     <genClasses ecoreClass="VideoGen.ecore#//VideoSeq">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoGen.ecore#//VideoSeq/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoGen.ecore#//VideoSeq/path"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoGen.ecore#//VideoSeq/probabilite"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoGen.ecore#//VideoSeq/description"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoGen.ecore#//VideoSeq/duree"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoGen.ecore#//VideoSeq/description"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

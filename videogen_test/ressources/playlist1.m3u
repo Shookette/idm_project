@@ -1,0 +1,14 @@
+#EXTM3U
+#EXT-X-DISCONTINUITY
+#EXTINF:4077.0 - Ribs
+/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Ribs.mp4
+#EXT-X-DISCONTINUITY
+#EXTINF:1965.0 - Alien
+/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Alien.mp4
+#EXT-X-DISCONTINUITY
+#EXTINF:678.0 - Tooth_Fairy
+/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Tooth_Fairy.mp4
+#EXT-X-DISCONTINUITY
+#EXTINF:503.0 - Worms
+/home/jeremy/workspace/idm_project/videogen_test/ressources/video/Worms.mp4
+#EXT-X-ENDLIST

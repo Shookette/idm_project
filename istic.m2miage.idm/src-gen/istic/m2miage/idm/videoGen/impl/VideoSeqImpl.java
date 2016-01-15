@@ -21,9 +21,8 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <ul>
  *   <li>{@link istic.m2miage.idm.videoGen.impl.VideoSeqImpl#getName <em>Name</em>}</li>
  *   <li>{@link istic.m2miage.idm.videoGen.impl.VideoSeqImpl#getPath <em>Path</em>}</li>
- *   <li>{@link istic.m2miage.idm.videoGen.impl.VideoSeqImpl#getProbabilite <em>Probabilite</em>}</li>
- *   <li>{@link istic.m2miage.idm.videoGen.impl.VideoSeqImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link istic.m2miage.idm.videoGen.impl.VideoSeqImpl#getDuree <em>Duree</em>}</li>
+ *   <li>{@link istic.m2miage.idm.videoGen.impl.VideoSeqImpl#getDescription <em>Description</em>}</li>
  * </ul>
  * </p>
  *
@@ -72,24 +71,24 @@ public class VideoSeqImpl extends MinimalEObjectImpl.Container implements VideoS
   protected String path = PATH_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getProbabilite() <em>Probabilite</em>}' attribute.
+   * The default value of the '{@link #getDuree() <em>Duree</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getProbabilite()
+   * @see #getDuree()
    * @generated
    * @ordered
    */
-  protected static final String PROBABILITE_EDEFAULT = null;
+  protected static final String DUREE_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getProbabilite() <em>Probabilite</em>}' attribute.
+   * The cached value of the '{@link #getDuree() <em>Duree</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getProbabilite()
+   * @see #getDuree()
    * @generated
    * @ordered
    */
-  protected String probabilite = PROBABILITE_EDEFAULT;
+  protected String duree = DUREE_EDEFAULT;
 
   /**
    * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
@@ -110,26 +109,6 @@ public class VideoSeqImpl extends MinimalEObjectImpl.Container implements VideoS
    * @ordered
    */
   protected String description = DESCRIPTION_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getDuree() <em>Duree</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDuree()
-   * @generated
-   * @ordered
-   */
-  protected static final String DUREE_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getDuree() <em>Duree</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDuree()
-   * @generated
-   * @ordered
-   */
-  protected String duree = DUREE_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -203,9 +182,9 @@ public class VideoSeqImpl extends MinimalEObjectImpl.Container implements VideoS
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getProbabilite()
+  public String getDuree()
   {
-    return probabilite;
+    return duree;
   }
 
   /**
@@ -213,12 +192,12 @@ public class VideoSeqImpl extends MinimalEObjectImpl.Container implements VideoS
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setProbabilite(String newProbabilite)
+  public void setDuree(String newDuree)
   {
-    String oldProbabilite = probabilite;
-    probabilite = newProbabilite;
+    String oldDuree = duree;
+    duree = newDuree;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, VideoGenPackage.VIDEO_SEQ__PROBABILITE, oldProbabilite, probabilite));
+      eNotify(new ENotificationImpl(this, Notification.SET, VideoGenPackage.VIDEO_SEQ__DUREE, oldDuree, duree));
   }
 
   /**
@@ -249,29 +228,6 @@ public class VideoSeqImpl extends MinimalEObjectImpl.Container implements VideoS
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getDuree()
-  {
-    return duree;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setDuree(String newDuree)
-  {
-    String oldDuree = duree;
-    duree = newDuree;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, VideoGenPackage.VIDEO_SEQ__DUREE, oldDuree, duree));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
@@ -281,12 +237,10 @@ public class VideoSeqImpl extends MinimalEObjectImpl.Container implements VideoS
         return getName();
       case VideoGenPackage.VIDEO_SEQ__PATH:
         return getPath();
-      case VideoGenPackage.VIDEO_SEQ__PROBABILITE:
-        return getProbabilite();
-      case VideoGenPackage.VIDEO_SEQ__DESCRIPTION:
-        return getDescription();
       case VideoGenPackage.VIDEO_SEQ__DUREE:
         return getDuree();
+      case VideoGenPackage.VIDEO_SEQ__DESCRIPTION:
+        return getDescription();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -307,14 +261,11 @@ public class VideoSeqImpl extends MinimalEObjectImpl.Container implements VideoS
       case VideoGenPackage.VIDEO_SEQ__PATH:
         setPath((String)newValue);
         return;
-      case VideoGenPackage.VIDEO_SEQ__PROBABILITE:
-        setProbabilite((String)newValue);
+      case VideoGenPackage.VIDEO_SEQ__DUREE:
+        setDuree((String)newValue);
         return;
       case VideoGenPackage.VIDEO_SEQ__DESCRIPTION:
         setDescription((String)newValue);
-        return;
-      case VideoGenPackage.VIDEO_SEQ__DUREE:
-        setDuree((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -336,14 +287,11 @@ public class VideoSeqImpl extends MinimalEObjectImpl.Container implements VideoS
       case VideoGenPackage.VIDEO_SEQ__PATH:
         setPath(PATH_EDEFAULT);
         return;
-      case VideoGenPackage.VIDEO_SEQ__PROBABILITE:
-        setProbabilite(PROBABILITE_EDEFAULT);
+      case VideoGenPackage.VIDEO_SEQ__DUREE:
+        setDuree(DUREE_EDEFAULT);
         return;
       case VideoGenPackage.VIDEO_SEQ__DESCRIPTION:
         setDescription(DESCRIPTION_EDEFAULT);
-        return;
-      case VideoGenPackage.VIDEO_SEQ__DUREE:
-        setDuree(DUREE_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -363,12 +311,10 @@ public class VideoSeqImpl extends MinimalEObjectImpl.Container implements VideoS
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case VideoGenPackage.VIDEO_SEQ__PATH:
         return PATH_EDEFAULT == null ? path != null : !PATH_EDEFAULT.equals(path);
-      case VideoGenPackage.VIDEO_SEQ__PROBABILITE:
-        return PROBABILITE_EDEFAULT == null ? probabilite != null : !PROBABILITE_EDEFAULT.equals(probabilite);
-      case VideoGenPackage.VIDEO_SEQ__DESCRIPTION:
-        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
       case VideoGenPackage.VIDEO_SEQ__DUREE:
         return DUREE_EDEFAULT == null ? duree != null : !DUREE_EDEFAULT.equals(duree);
+      case VideoGenPackage.VIDEO_SEQ__DESCRIPTION:
+        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
     }
     return super.eIsSet(featureID);
   }
@@ -388,12 +334,10 @@ public class VideoSeqImpl extends MinimalEObjectImpl.Container implements VideoS
     result.append(name);
     result.append(", path: ");
     result.append(path);
-    result.append(", probabilite: ");
-    result.append(probabilite);
-    result.append(", description: ");
-    result.append(description);
     result.append(", duree: ");
     result.append(duree);
+    result.append(", description: ");
+    result.append(description);
     result.append(')');
     return result.toString();
   }

@@ -375,9 +375,9 @@ ruleVideoSeq returns [EObject current=null]
 )
 )(
 (
-		lv_probabilite_3_0=RULE_PROBABILITY
+		lv_duree_3_0=RULE_STRING
 		{
-			newLeafNode(lv_probabilite_3_0, grammarAccess.getVideoSeqAccess().getProbabiliteProbabilityTerminalRuleCall_3_0()); 
+			newLeafNode(lv_duree_3_0, grammarAccess.getVideoSeqAccess().getDureeSTRINGTerminalRuleCall_3_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -385,9 +385,9 @@ ruleVideoSeq returns [EObject current=null]
 	        }
        		setWithLastConsumed(
        			$current, 
-       			"probabilite",
-        		lv_probabilite_3_0, 
-        		"Probability");
+       			"duree",
+        		lv_duree_3_0, 
+        		"STRING");
 	    }
 
 )
@@ -409,34 +409,12 @@ ruleVideoSeq returns [EObject current=null]
 	    }
 
 )
-)?(
-(
-		lv_duree_5_0=RULE_DURATION
-		{
-			newLeafNode(lv_duree_5_0, grammarAccess.getVideoSeqAccess().getDureeDurationTerminalRuleCall_5_0()); 
-		}
-		{
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getVideoSeqRule());
-	        }
-       		setWithLastConsumed(
-       			$current, 
-       			"duree",
-        		lv_duree_5_0, 
-        		"Duration");
-	    }
-
-)
 )?)
 ;
 
 
 
 
-
-RULE_DURATION : RULE_INT '"';
-
-RULE_PROBABILITY : RULE_INT '%';
 
 RULE_ID : '^'? ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
 

@@ -170,18 +170,16 @@ public class VideoGenGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Assignment cPathAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cPathSTRINGTerminalRuleCall_2_0 = (RuleCall)cPathAssignment_2.eContents().get(0);
-		private final Assignment cProbabiliteAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cProbabiliteProbabilityTerminalRuleCall_3_0 = (RuleCall)cProbabiliteAssignment_3.eContents().get(0);
+		private final Assignment cDureeAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cDureeSTRINGTerminalRuleCall_3_0 = (RuleCall)cDureeAssignment_3.eContents().get(0);
 		private final Assignment cDescriptionAssignment_4 = (Assignment)cGroup.eContents().get(4);
 		private final RuleCall cDescriptionSTRINGTerminalRuleCall_4_0 = (RuleCall)cDescriptionAssignment_4.eContents().get(0);
-		private final Assignment cDureeAssignment_5 = (Assignment)cGroup.eContents().get(5);
-		private final RuleCall cDureeDurationTerminalRuleCall_5_0 = (RuleCall)cDureeAssignment_5.eContents().get(0);
 		
 		//VideoSeq:
-		//	"videoseq" name=ID path=STRING probabilite=Probability? description=STRING? duree=Duration?;
+		//	"videoseq" name=ID path=STRING duree=STRING? description=STRING?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//"videoseq" name=ID path=STRING probabilite=Probability? description=STRING? duree=Duration?
+		//"videoseq" name=ID path=STRING duree=STRING? description=STRING?
 		public Group getGroup() { return cGroup; }
 
 		//"videoseq"
@@ -199,23 +197,17 @@ public class VideoGenGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getPathSTRINGTerminalRuleCall_2_0() { return cPathSTRINGTerminalRuleCall_2_0; }
 
-		//probabilite=Probability?
-		public Assignment getProbabiliteAssignment_3() { return cProbabiliteAssignment_3; }
+		//duree=STRING?
+		public Assignment getDureeAssignment_3() { return cDureeAssignment_3; }
 
-		//Probability
-		public RuleCall getProbabiliteProbabilityTerminalRuleCall_3_0() { return cProbabiliteProbabilityTerminalRuleCall_3_0; }
+		//STRING
+		public RuleCall getDureeSTRINGTerminalRuleCall_3_0() { return cDureeSTRINGTerminalRuleCall_3_0; }
 
 		//description=STRING?
 		public Assignment getDescriptionAssignment_4() { return cDescriptionAssignment_4; }
 
 		//STRING
 		public RuleCall getDescriptionSTRINGTerminalRuleCall_4_0() { return cDescriptionSTRINGTerminalRuleCall_4_0; }
-
-		//duree=Duration?
-		public Assignment getDureeAssignment_5() { return cDureeAssignment_5; }
-
-		//Duration
-		public RuleCall getDureeDurationTerminalRuleCall_5_0() { return cDureeDurationTerminalRuleCall_5_0; }
 	}
 	
 	
@@ -225,8 +217,6 @@ public class VideoGenGrammarAccess extends AbstractGrammarElementFinder {
 	private final OptionalElements pOptional;
 	private final AlternativesElements pAlternatives;
 	private final VideoSeqElements pVideoSeq;
-	private final TerminalRule tDuration;
-	private final TerminalRule tProbability;
 	
 	private final Grammar grammar;
 
@@ -243,8 +233,6 @@ public class VideoGenGrammarAccess extends AbstractGrammarElementFinder {
 		this.pOptional = new OptionalElements();
 		this.pAlternatives = new AlternativesElements();
 		this.pVideoSeq = new VideoSeqElements();
-		this.tDuration = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "Duration");
-		this.tProbability = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "Probability");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
@@ -325,7 +313,7 @@ public class VideoGenGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//VideoSeq:
-	//	"videoseq" name=ID path=STRING probabilite=Probability? description=STRING? duree=Duration?;
+	//	"videoseq" name=ID path=STRING duree=STRING? description=STRING?;
 	public VideoSeqElements getVideoSeqAccess() {
 		return pVideoSeq;
 	}
@@ -333,18 +321,6 @@ public class VideoGenGrammarAccess extends AbstractGrammarElementFinder {
 	public ParserRule getVideoSeqRule() {
 		return getVideoSeqAccess().getRule();
 	}
-
-	//terminal Duration:
-	//	INT "\"";
-	public TerminalRule getDurationRule() {
-		return tDuration;
-	} 
-
-	//terminal Probability:
-	//	INT "%";
-	public TerminalRule getProbabilityRule() {
-		return tProbability;
-	} 
 
 	//terminal ID:
 	//	"^"? ("a".."z" | "A".."Z" | "_") ("a".."z" | "A".."Z" | "_" | "0".."9")*;

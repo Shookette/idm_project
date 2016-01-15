@@ -21,8 +21,5 @@ Alternatives:
 	'alternatives' name=ID '{' videos+=VideoSeq+ '}'
 ;
 VideoSeq:
-	'videoseq' name=ID path=STRING probabilite=PROBABILITY? description=STRING? duree=DURATION?
+	'videoseq' name=ID path=STRING duree=STRING? description=STRING?
 ;
-
-terminal DURATION: INT '"';
-terminal PROBABILITY: INT '%';
