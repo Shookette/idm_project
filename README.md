@@ -1,5 +1,7 @@
 # Video Generator
 
+## Motivation 
+
 This project was created to generate from special grammar a video composed by random subsequence.
 This project contains the grammar of the new language used to indicated the subsequence of the video.
 
